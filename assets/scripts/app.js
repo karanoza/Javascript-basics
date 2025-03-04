@@ -28,6 +28,19 @@ console.log(index);
 const newHobbies = hobbies.map((item) => ({text: item}))
 console.log(newHobbies);
 
+// for numerical o/p  val: 1, val:2, val:3 
+function transformToObjects(numberArray) {
+    // Todo: Add your logic
+    // should return an array of objects
+    const newArray = numberArray.map((num) => ({val: num}));
+    return newArray
+}
+let array = [1,2,3];
+let display  = transformToObjects(array);
+console.log(display);
+
+
+
 // destrcturing
 
 const [firstName, lastName] = ['Karan', 'Oza']; //array destructuring
